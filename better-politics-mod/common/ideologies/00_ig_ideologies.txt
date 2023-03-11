@@ -20,6 +20,7 @@ ideology_paternalistic = {
 		law_oligarchy = approve
 		law_wealth_voting = neutral
 		law_census_voting = neutral
+		law_weighted_universal_suffrage = neutral
 		law_universal_suffrage = disapprove
 		law_anarchy = strongly_disapprove
 	}
@@ -384,16 +385,69 @@ ideology_liberal = {
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = neutral
 	}
+	
+	lawgroup_church_and_state = {
+		law_total_separation = approve
+		law_freedom_of_conscience = approve
+		law_state_religion = neutral
+	}
 
 	lawgroup_distribution_of_power = {
-		law_universal_suffrage = neutral
-		law_census_voting = approve
+		law_census_voting = strongly_approve
+		law_universal_suffrage = approve
+		law_weighted_universal_suffrage = approve
 		law_wealth_voting = approve
 		law_landed_voting = neutral
 		law_oligarchy = disapprove
 		law_autocracy = disapprove
 		law_anarchy = strongly_disapprove
 	}	
+}
+
+ideology_radical_liberal = {
+	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
+	
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = disapprove
+		law_racial_segregation = disapprove
+		law_cultural_exclusion = neutral
+		law_multicultural = neutral	
+	}
+	
+	lawgroup_policing = {
+		law_no_police = neutral
+		law_dedicated_police = neutral
+		law_local_police = disapprove
+		law_militarized_police = strongly_disapprove
+	}
+	
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = approve
+		law_no_home_affairs = neutral
+		law_national_guard = disapprove
+		law_secret_police = neutral
+	}
+	
+	lawgroup_free_speech = {
+		law_protected_speech = approve
+		law_right_of_assembly = approve
+		law_censorship = neutral
+		law_outlawed_dissent = disapprove
+	}
+	
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = disapprove
+		law_women_own_property = approve
+		law_women_in_the_workplace = neutral
+		law_womens_suffrage = neutral
+	}
+
+	lawgroup_church_and_state = {
+		law_total_separation = approve
+		law_freedom_of_conscience = neutral
+		law_state_religion = disapprove
+	}
 }
 
 ideology_anti_clerical = {
@@ -432,9 +486,10 @@ ideology_republican = {
 	
 	lawgroup_distribution_of_power = {
 		law_universal_suffrage = strongly_approve
+		law_weighted_universal_suffrage = approve
 		law_census_voting = approve
-		law_wealth_voting = approve
-		law_landed_voting = neutral
+		law_wealth_voting = neutral
+		law_landed_voting = disapprove
 		law_oligarchy = disapprove
 		law_autocracy = disapprove
 		law_anarchy = strongly_disapprove
@@ -517,7 +572,8 @@ ideology_populist = {
 	icon = "gfx/interface/icons/ideology_icons/populist.dds"
 	
 	lawgroup_distribution_of_power = {
-		law_universal_suffrage = approve
+		law_universal_suffrage = strongly_approve
+		law_weighted_universal_suffrage = approve
 		law_census_voting = neutral
 		law_anarchy = disapprove
 		law_wealth_voting = disapprove
@@ -581,8 +637,9 @@ ideology_plutocratic = {
 		law_wealth_voting = approve
 		law_landed_voting = neutral
 		law_census_voting = neutral
+		law_weighted_universal_suffrage = neutral
 		law_autocracy = disapprove
-		law_universal_suffrage = strongly_disapprove
+		law_universal_suffrage = disapprove
 		law_anarchy = strongly_disapprove
 	}
 
@@ -668,7 +725,8 @@ ideology_ig_anarchist = {
 		law_anarchy = strongly_approve
 		law_universal_suffrage = neutral
 		law_census_voting = disapprove
-		law_wealth_voting = strongly_disapprove	
+		law_weighted_universal_suffrage = disapprove
+		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove	
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove		
@@ -720,6 +778,7 @@ ideology_ig_fascist = {
 		law_oligarchy = neutral
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
+		law_weighted_universal_suffrage = strongly_disapprove
 		law_census_voting = strongly_disapprove
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove				
@@ -761,6 +820,7 @@ ideology_ig_united_socialist = {
 		lawgroup_distribution_of_power = {
 			law_anarchy = neutral
 			law_universal_suffrage = strongly_approve
+			law_weighted_universal_suffrage = disapprove
 			law_census_voting = strongly_disapprove
 			law_wealth_voting = strongly_disapprove
 			law_landed_voting = strongly_disapprove
@@ -797,6 +857,7 @@ ideology_ig_reformist_socialist = {
 	lawgroup_distribution_of_power = {
 		law_anarchy = disapprove
 		law_universal_suffrage = strongly_approve
+		law_weighted_universal_suffrage = neutral
 		law_census_voting = disapprove
 		law_wealth_voting = disapprove
 		law_landed_voting = disapprove
@@ -845,7 +906,8 @@ ideology_ig_social_democrat = {
 	lawgroup_distribution_of_power = {
 		law_anarchy = disapprove
 		law_universal_suffrage = strongly_approve
-		law_census_voting = disapprove
+		law_weighted_universal_suffrage = approve
+		law_census_voting = neutral
 		law_wealth_voting = disapprove
 		law_landed_voting = disapprove
 		law_oligarchy = strongly_disapprove
